@@ -307,6 +307,12 @@ img {
   padding: 120px 0;
 }
 
+@media screen and (max-width: 767px) {
+  .company .company-inner {
+    padding: 60px 20px;
+  }
+}
+
 .company .company-inner .company-title {
   color: #111;
   font-size: 36px;
