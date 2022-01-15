@@ -1,0 +1,409 @@
+@media print, screen and (min-width: 768px) {
+  ._sp {
+    display: none;
+  }
+}
+
+._pc {
+  display: none;
+}
+
+@media print, screen and (min-width: 768px) {
+  ._pc {
+    display: block;
+  }
+}
+
+@font-face {
+  font-family: "NotoSans-bold";
+  src: url(../fonts/NotoSansCJKjp-Bold.otf);
+}
+
+@font-face {
+  font-family: "NotoSans-medium";
+  src: url(../fonts/NotoSansCJKjp-Medium.otf);
+}
+
+@font-face {
+  font-family: "NotoSans-regular";
+  src: url(../fonts/NotoSansCJKjp-Regular.otf);
+}
+
+@font-face {
+  font-family: "NotoSerif-light";
+  src: url(../fonts/NotoSerifJP-Light.otf);
+}
+
+@font-face {
+  font-family: "NotoSerif-regular";
+  src: url(../fonts/NotoSerifJP-Regular.otf);
+}
+
+@font-face {
+  font-family: "NotoSerif-medium";
+  src: url(../fonts/NotoSerifJP-Medium.otf);
+}
+
+@font-face {
+  font-family: "NotoSerif-bold";
+  src: url(../fonts/NotoSerifJP-Bold.otf);
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  src: url(../fonts/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(../fonts/Lato-Regular.ttf);
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Hiragino Mincho Pro", serif;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.br-sp {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .br-sp {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .br-pc {
+    display: none;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .header-logo {
+  margin-left: 50px;
+  color: #333;
+  font-size: 20px;
+  font-family: "NotoSerif-bold";
+}
+
+@media screen and (max-width: 767px) {
+  .header .header-logo {
+    margin-left: 20px;
+  }
+}
+
+.header .header-btn {
+  margin-right: 50px;
+  background-color: #09174e;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .header .header-btn {
+    margin-right: 20px;
+    width: 120px;
+    height: 35px;
+  }
+}
+
+.header .header-btn a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "NotoSans-medium";
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .header .header-btn a {
+    font-size: 14px;
+  }
+}
+
+.footer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 14px;
+  font-family: "NotoSans-medium";
+}
+
+.top {
+  padding: 50px 0;
+  background-color: #eff2f5;
+}
+
+@media screen and (max-width: 767px) {
+  .top {
+    padding: 50px 20px;
+  }
+}
+
+.top .top-title {
+  margin-top: 30px;
+  color: #333;
+  font-size: 36px;
+  font-family: "NotoSerif-regular";
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .top .top-title {
+    font-size: 24px;
+  }
+}
+
+.top .top-text {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 16px;
+  font-family: "NotoSans-medium";
+  letter-spacing: 0.2em;
+  line-height: 3;
+  text-align: center;
+}
+
+.business {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.business .business-title {
+  color: #111;
+  font-size: 36px;
+  font-family: "PlayfairDisplay-Regular";
+  text-align: center;
+}
+
+.business .business-title p {
+  font-size: 16px;
+  font-family: "NotoSans-medium";
+  line-height: 0.1em;
+}
+
+.business .business-list {
+  margin-top: 50px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.business .business-list .business-item {
+  width: 340px;
+  padding-bottom: 30px;
+}
+
+.business .business-list .business-item:nth-child(3n + 2) {
+  margin-left: 30px;
+}
+
+.business .business-list .business-item:nth-child(3n) {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+  .business .business-list .business-item:nth-child(2n + 1) {
+    margin-left: 0px;
+  }
+  .business .business-list .business-item:nth-child(2n) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .business .business-list .business-item {
+    margin-left: 0px;
+  }
+  .business .business-list .business-item:nth-child(2n) {
+    margin-left: 0px;
+  }
+}
+
+.business .business-list .business-item .business-img img {
+  border-radius: 10px;
+}
+
+.business .business-list .business-item .business-content {
+  margin-top: 30px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.business .business-list .business-item .business-content .business-content-number {
+  margin-left: 30px;
+  width: 28px;
+  height: 28px;
+  background-color: #09174e;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  font-family: lato;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.business .business-list .business-item .business-content .business-content-text {
+  margin-left: 10px;
+  color: #333;
+  font-size: 18px;
+  font-family: "NotoSerif-regular";
+  letter-spacing: 0.05em;
+  line-height: 1.6;
+}
+
+.company {
+  background-color: #eff2f5;
+  padding: 120px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .company {
+    padding: 40px 20px;
+  }
+}
+
+.company .company-inner {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding: 120px 0;
+}
+
+.company .company-inner .company-title {
+  color: #111;
+  font-size: 36px;
+  font-family: "PlayfairDisplay-Regular";
+  text-align: center;
+}
+
+.company .company-inner .company-title p {
+  font-size: 16px;
+  font-family: "NotoSans-medium";
+  line-height: 0.1em;
+}
+
+.company .company-inner .company-list {
+  max-width: 740px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+}
+
+.company .company-inner .company-list .company-item {
+  padding: 15px 0;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-family: "NotoSans-medium";
+  border-bottom: 1px solid #dadcdc;
+}
+
+.company .company-inner .company-list .company-item .company-item-title {
+  width: 200px;
+  padding: 0 10px;
+  font-size: 20px;
+  line-height: 1.8em;
+}
+
+@media screen and (max-width: 767px) {
+  .company .company-inner .company-list .company-item .company-item-title {
+    width: 80px;
+    font-size: 17px;
+  }
+}
+
+.company .company-inner .company-list .company-item .company-item-text {
+  flex: 1;
+  font-size: 16px;
+  line-height: 2.2em;
+}
+
+@media screen and (max-width: 767px) {
+  .company .company-inner .company-list .company-item .company-item-text {
+    font-size: 14px;
+  }
+}
+
+.contact {
+  background-color: #09174e;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.contact .contact-title {
+  font-size: 36px;
+  font-family: "PlayfairDisplay-Regular";
+  text-align: center;
+}
+
+.contact .contact-title p {
+  font-size: 16px;
+  font-family: "NotoSans-medium";
+  line-height: 0.1em;
+}
+
+.contact .contact-text {
+  margin-top: 50px;
+  font-size: 16px;
+  font-family: "NotoSans-medium";
+  text-align: center;
+  letter-spacing: 0.1em;
+  line-height: 1.8em;
+}
+
+@media screen and (max-width: 767px) {
+  .contact .contact-text {
+    font-size: 14px;
+  }
+}
+
+.contact .contact-mail {
+  margin-top: 20px;
+  font-size: 28px;
+  font-family: "PlayfairDisplay-Regular";
+  text-align: center;
+  text-decoration: underline;
+}
+
+.contact .contact-mail a {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
